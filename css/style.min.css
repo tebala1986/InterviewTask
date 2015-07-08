@@ -1,0 +1,89 @@
+@import url("../libs/bootstrap-3/bootstrap.css");
+#wizard {
+    padding: 2%;
+    height: auto;
+    width:100%;display: inline-table;
+}
+.progress_indicator {width: 10%;float: left; }
+.right {width: 88%;
+    float: right;
+    margin-left: 5px;
+    border-left: 2px solid #ccc;
+    padding: 0 10px;}
+h2 {margin:0px ;}
+#wizard #progress_indicator label {
+    cursor: pointer;
+    display: block;
+}
+#wizard #progress_indicator label title {
+    display: block;
+    text-align: center;
+}
+#wizard #progress_indicator label span {
+    display: block;
+    border-radius: 50%;
+    background: greenyellow;
+    width: 20px;
+    height: 22px;
+    text-align: center;
+    margin: auto auto;
+}
+#wizard #progress_indicator label:hover {
+    background: #5bc0de;
+    border-radius: 5%;
+}
+#wizard #buttons {
+    width: 50%;
+    float: right;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height: 45px;
+}
+.btn-info{margin-left:15px !important;}
+#wizard button#showTree {
+    margin-top: 100px;
+}
+#wizard #tree {
+    background: gainsboro;
+    width: 90%;
+    margin: auto auto;
+    border: solid 1px;
+    margin: 4%;
+}
+#wizard #tree .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 3px;
+}
+#wizard #tree .node text {
+    font: 12px sans-serif;
+}
+#wizard #tree .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+.col-md-12 {
+    margin-bottom: 4%;
+    border: solid 1px #dbdbdb;
+    padding: 3%;
+}
+@media screen and (max-width: 758px) {
+    .container {
+        padding: 10px 30px;
+    }
+    .col-md-12 {
+        margin-bottom: 20%;
+        border: none;
+    }
+}
+
+#wizard input[type="text"]{
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.current_step_container label{ font-weight : bold;}
